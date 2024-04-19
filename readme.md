@@ -116,3 +116,36 @@ while i < 10:
     print()
 ```
 
+##### for循环
+
+```python
+name = 'zhangsan'
+for i in name:
+    print(i)
+```
+
+###### range使用
+
+```python
+# range(start,stop,step)
+for i in range(1, 10, 2):
+    print(i, end=' ')
+
+print()
+for i in range(10):
+    print(i, end=' ')
+
+print()
+for i in range(1, 10):
+    print(i, end=' ')
+```
+
+```python
+# 嵌套九九乘法表
+for i in range(1, 10):
+    for j in range(1, i + 1):
+        print("{}*{}={}\t".format(j, i, j * i),end=" ")
+    print()
+
+```
+
