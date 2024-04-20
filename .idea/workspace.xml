@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="589b273f-5b16-4c59-8809-f6757ef54329" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/数据结构/数据容器.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -397,7 +395,7 @@
       <workItem from="1713445056344" duration="4122000" />
       <workItem from="1713530951451" duration="374000" />
       <workItem from="1713531388483" duration="4684000" />
-      <workItem from="1713620497444" duration="3730000" />
+      <workItem from="1713620497444" duration="4084000" />
     </task>
     <servers />
   </component>
@@ -428,7 +426,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/quick_study$.coverage" NAME="数据容器 覆盖结果" MODIFIED="1713624105371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/数据结构" />
-    <SUITE FILE_PATH="coverage/quick_study$main.coverage" NAME="main 覆盖结果" MODIFIED="1713354542944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/quick_study$main.coverage" NAME="main 覆盖结果" MODIFIED="1713624441014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/quick_study$if.coverage" NAME="if语句 覆盖结果" MODIFIED="1713451418317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/流程控制" />
     <SUITE FILE_PATH="coverage/quick_study$while.coverage" NAME="while语句 覆盖结果" MODIFIED="1713535035046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/流程控制" />
     <SUITE FILE_PATH="coverage/quick_study$continuebreak.coverage" NAME="continue和break 覆盖结果" MODIFIED="1713536842254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/流程控制" />

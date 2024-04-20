@@ -43,3 +43,15 @@ print(brr)
 # 删除指定元素
 brr.remove(3)
 print(brr)
+
+brr = [1, 2, 3, 4, 5, "a", "qqq"]
+index = 0
+while index < len(brr):
+    print(brr[index], end=" ")
+    index += 1
+print()
+for item in brr:
+    print(item, end=" ")
+print()
+for i in range(0, len(brr)):
+    print(brr[i], end=" ")
