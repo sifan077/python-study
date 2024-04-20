@@ -166,3 +166,66 @@ for i in range(1, 10):
 
 ```
 
+### 3. 面向对象
+
+##### 函数
+
+```python
+# 无返回值
+def hello():
+	print("Hello")
+hello()
+# 有返回值
+def add(a):
+    return a + 1
+
+print(add(1))
+
+def get_sums(*nums):
+    """
+    计算传入参数的总和。
+    
+    参数:
+    *nums - 可变参数，表示要进行求和的所有数字。
+    
+    返回值:
+    res - 整数，表示所有输入数字的和。
+    """
+    res = 0  # 初始化总和为0
+    for num in nums:  # 遍历所有输入的数字
+        res += num  # 累加当前数字到总和
+    return res  # 返回最终计算得到的总和
+get_sums(1, 2, 3, 4, 5)
+
+def get_sums2(name, *nums):
+    """
+    对给定名称和一组数字求和，并打印求和结果。
+    
+    参数:
+    name: str - 需要进行求和操作的名称。
+    *nums: 可变参数，表示要进行求和的数字。
+    
+    返回值:
+    无返回值，该函数仅打印求和结果。
+    """
+    res = 0  # 初始化求和结果为0
+    # 遍历所有传入的数字并求和
+    for num in nums:
+        res += num
+    # 打印求和结果
+    print(f'{name}的求和结果是{res}')
+get_sums2('Tom', 1, 2, 3, 4, 5)
+
+def test_global_variable():
+    """
+    测试全局变量的函数。
+    
+    本函数无参数。
+    本函数无返回值。
+    """
+    global global_num  # 引用全局变量global_num
+    global_num = 10  # 设置全局变量global_num的值为10
+test_global_variable()
+print(global_num)
+```
+
