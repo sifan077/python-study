@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="589b273f-5b16-4c59-8809-f6757ef54329" name="变更" comment="异常与模块">
-      <change afterPath="$PROJECT_DIR$/模块/自定义模块.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块/自定义模块2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="589b273f-5b16-4c59-8809-f6757ef54329" name="变更" comment="自定义模块" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +48,7 @@
       <recent name="D:\code\接单\quick_study\基础语法" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.自定义模块2">
+  <component name="RunManager" selected="Python.package_test">
     <configuration name="异常" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="quick_study" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,28 +129,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/模块/导入模块.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="文件测试" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="quick_study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/IO读写" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/IO读写/文件测试.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -515,13 +489,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="package_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="quick_study" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/包" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/包/package_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.package_test" />
         <item itemvalue="Python.自定义模块2" />
         <item itemvalue="Python.导入模块" />
         <item itemvalue="Python.异常传递" />
         <item itemvalue="Python.异常" />
-        <item itemvalue="Python.文件测试" />
       </list>
     </recent_temporary>
   </component>
@@ -541,7 +537,7 @@
       <workItem from="1713620497444" duration="4637000" />
       <workItem from="1713786920376" duration="1292000" />
       <workItem from="1713788241978" duration="5164000" />
-      <workItem from="1713871287012" duration="7542000" />
+      <workItem from="1713871287012" duration="7853000" />
     </task>
     <task id="LOCAL-00001" summary="列表遍历">
       <created>1713624802955</created>
@@ -564,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713881606740</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="自定义模块">
+      <created>1713882145891</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713882145891</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,6 +581,31 @@
             <State />
           </value>
         </entry>
+        <entry key="b7afc0d8-5822-4302-bc65-0f69ac5b3aa5">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/code/接单/quick_study/包" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
@@ -585,7 +613,8 @@
     <MESSAGE value="列表遍历" />
     <MESSAGE value="文件读取写入" />
     <MESSAGE value="异常与模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="异常与模块" />
+    <MESSAGE value="自定义模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="自定义模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
