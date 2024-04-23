@@ -607,3 +607,39 @@ for k, v in dic.items():
     print(f'{k}: {v}')
 
 ```
+
+### 5. IO操作
+
+##### 简单读取
+
+```python
+f = open("./test.txt", "r", encoding="utf-8")
+print(type(f))
+# 如果不传入参数，会读取全部的内容，传入参数，读取指定长度的内容
+# print(f.read(15))
+# print(f.read())
+# 读取每行内容
+lines = f.readlines()
+print(type(lines))
+for line in lines:
+    print(line)
+# 关闭文件
+f.close()
+
+# 使用with open会自动关闭文件
+with open("./test.txt", "r", encoding="utf-8") as f:
+    print(f.read())
+```
+
+##### 简单写入
+
+```python
+# 写模式，如果文件不存在，会自动创建
+f = open('data.txt', 'w',encoding='utf-8')
+f.write('hello world1')
+# 把内存中的内容写入到磁盘，刷新缓冲区
+f.flush()
+f.close()
+
+```
+
