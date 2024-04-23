@@ -608,7 +608,7 @@ for k, v in dic.items():
 
 ```
 
-### 5. IO操作
+### 5.IO操作
 
 ##### 简单读取
 
@@ -636,10 +636,99 @@ with open("./test.txt", "r", encoding="utf-8") as f:
 ```python
 # 写模式，如果文件不存在，会自动创建
 f = open('data.txt', 'w',encoding='utf-8')
-f.write('hello world1')
+f.write('hello world2')
 # 把内存中的内容写入到磁盘，刷新缓冲区
 f.flush()
 f.close()
+
+# 追加模式
+f = open('data.txt', 'a',encoding='utf-8')
+for i in range(1,15):
+    f.write('hello world{}\n'.format(i))
+f.close()
+```
+
+### 6. 异常
+
+程序运行出现意外，会有一些提示信息，可以捕获异常，做一些处理。
+
+```python
+# 捕获指定异常,最简单的除数不为0
+try:
+    print(1 / 0)
+except ZeroDivisionError as e:
+    print(e)
+    print('除数不能为0')
+
+
+# 捕获多个异常
+try:
+    print(name)
+    print(1 / 0)
+except (ZeroDivisionError, NameError) as e:
+    print('捕获除数为0异常，或者name未定义异常')
+
+# 捕获全部异常
+try:
+    print(name)
+    print(1 / 0)
+except Exception as e:
+    print('捕获全部异常')
+    print(e)
+    
+# try-except-else-finally
+try:
+    print(666)
+except Exception as e:
+    print('出现异常')
+else:
+    print('没有异常')
+finally:
+    print('不管有没有异常都会执行')
+```
+
+##### 异常传递
+
+```python
+def func_1():
+    print(1 / 0)
+
+
+def func_2():
+    func_1()
+
+
+def func_3():
+    try:
+        func_2()
+    except Exception as e:
+        print(e)
+
+
+func_3()
+```
+
+### 7.模块
+
+```python
+# 导入模块
+import time
+
+print(time.time())
+
+# 导入模块别名
+import random as rom
+
+print(rom.randint(1, 100))
+
+# 导入模块成员
+from random import randint
+
+print(randint(1, 100))
+
+# 导入模块成员别名
+from random import randint as rd
+print(rd(1, 100))
 
 ```
 
