@@ -371,6 +371,8 @@ print(operate(6, 2, lambda a, b: a * b))
 
 ##### 列表
 
+列表可以存储不同类型的数据，可以重复，可以修改。
+
 ```python
 # 声明一个列表字面量
 [1, "3", "a", "d"]
@@ -575,6 +577,8 @@ print()
 
 ##### 字典
 
+可以当做`Java`的`Map`来理解，就是KV集
+
 ```python
 # 定义空字典
 empty_dic1 = {}
@@ -754,7 +758,7 @@ if __name__ == '__main__':
     print("我是自定义模块导入不会执行")
 ```
 
-### 8. 包
+### 8.包
 
 包导入基本同模块，但是其`__all__`写到包下的`__init.py__`中。
 
@@ -831,7 +835,7 @@ line.render()
 
 ##### 地图
 
-需要做一下城市名映射。
+版本不同的时候需要做一下城市名映射。
 
 ```python
 from pyecharts.charts import Map
@@ -940,3 +944,328 @@ timeLine.render('时间线柱状图.html')
 
 具体的使用，看着官网文档，自己填充就行。
 
+### 11.面向对象
+
+##### 类与对象
+
+类的基本定义与`Java`没有太大区别，定义成员方法差别也不大。
+
+```python
+# 定义类
+class Student:
+    name = None
+    age = None
+    gender = None
+    address = None
+    nation = None
+
+    # 自定义成员方法
+    def say_hi(self):
+        """
+        向大家打招呼并介绍自己。
+
+        方法无需参数，并且没有返回值。
+        通过调用实例的属性，自我介绍包括：名字、年龄、地址和民族。
+        """
+        print('大家好，我是%s，今年%s岁，来自%s，我是%s人。' % (self.name, self.age, self.address, self.nation))
+
+    def say_hi2(self, msg):
+        """
+        向指定对象Say Hi，并输出消息。
+
+        :param self: 对象自身引用，允许访问对象的属性和方法。
+        :param msg: 要输出的消息字符串。
+        :return: 无返回值。
+        """
+        print("{}说:{}".format(self.name, msg))  # 格式化输出对象名称和消息
+
+    # 重写__str__方法
+    def __str__(self):
+        """
+        将对象转换为字符串形式，方便打印或输出。
+        现在可以理解为java 的 toString()方法。打印会默认调用
+
+        参数:
+        self: 表示对象自身，此处用于访问对象的属性。
+
+        返回值:
+        str: 返回一个包含姓名、年龄、性别、地址和民族的字符串。
+        """
+        return '姓名：%s，年龄：%s，性别：%s，地址：%s，民族：%s' % (self.name, self.age, self.address, self.address, self.nation)
+
+
+# 创建对象
+student = Student()
+# 访问修改成员属性
+student.name = '张三'
+student.age = 18
+student.gender = '男'
+student.address = '北京'
+student.nation = '汉'
+print(student)
+student.say_hi()
+student.say_hi2("你好")
+```
+
+##### 构造方法
+
+构造函数也就是创建对象的方法,`__init__`中需要几个参数，也就是需要多少参数的构造。`__gt__`、`__eq__``__lt__``__str__`等重写可以重写操作符和打印信息之类的。
+
+```python
+class Person:
+    name = None
+    age = None
+    sex = None
+
+    def __init__(self, name, age, sex):
+        """
+           Person类的构造函数。
+
+           参数:
+           - name: 字符串，表示人的姓名。
+           - age: 整数，表示人的年龄。
+           - sex: 字符串，表示人的性别。
+
+           返回值:
+           - 无
+           """
+        self.name = name
+        self.age = age
+        self.sex = sex
+
+    def __str__(self):
+        """
+        将对象转换为字符串表示形式。
+
+        参数:
+        - self: 对象自身的引用。
+
+        返回值:
+        - 返回一个字符串，包含对象的姓名、年龄和性别信息。
+        """
+        return f'{self.name} {self.age} {self.sex}'
+
+    def __lt__(self, other):
+        """
+        重载小于号操作符的方法。
+
+        参数:
+        self: 当前对象的实例。
+        other: 与当前对象进行比较的另一个对象实例。
+
+        返回值:
+        返回一个布尔值，表示当前对象的年龄是否小于另一个对象的年龄。
+        """
+        return self.age < other.age
+
+    def __gt__(self, other):
+        """
+        重载大于运算符的方法。
+
+        参数:
+        - self: 当前对象的实例。
+        - other: 与当前对象进行比较的另一个对象实例。
+
+        返回值:
+        - 返回一个布尔值，表示当前对象的年龄是否大于另一个对象的年龄。
+        """
+        return self.age > other.age
+
+    def __eq__(self, other):
+        """
+        实现对象的等于比较方法。
+
+        参数:
+        - self: 当前对象的实例。
+        - other: 与当前对象进行比较的另一个对象实例。
+
+        返回值:
+        - 返回一个布尔值，表示当前对象与另一个对象是否在年龄上相等。
+        """
+        return self.age == other.age
+
+
+p = Person('张三', 18, '男')
+print(p)
+
+p2 = Person('李四', 20, '男')
+print(p2)
+
+if p < p2:
+    print(f'{p.name} 年龄{p.age}小于 {p2.name} {p2.age}')
+else:
+    print(f'{p.name} 年龄{p.age}不小于 {p2.name} {p2.age}')
+
+```
+
+
+
+##### 封装
+
+封装一些变量，对内部可以访问，对外部无法访问，私有方法`__`前缀开头，私有变量也是`__`开头
+
+```python
+class Phone:
+    IMEI = None
+    producer = None
+    # 声明私有变量
+    __price = None
+    __color = None
+
+    def __init__(self, IMEI, producer, price, color):
+        self.IMEI = IMEI
+        self.producer = producer
+        self.__price = price
+        self.__color = color
+        self.__pre_test()
+
+    def __pre_test(self):
+        """
+        执行手机出厂测试的私有方法。
+
+        该方法不需要传入任何参数，也没有返回值。
+        主要用于手机生产阶段的出厂质量测试，确保手机各项功能正常。
+        """
+        print("私有方法。手机出场测试")
+        if self.__color == '黑色':
+            print("手机颜色为黑色，额外进行测试")
+
+    def get_price(self):
+        return self.__price
+
+    def set_price(self, price):
+        self.__price = price
+
+    def get_color(self):
+        return self.__color
+
+    def set_color(self, color):
+        self.__color = color
+
+
+p = Phone("6565656565656565", "小米", 1000, "黑色")
+print(p.IMEI)
+print(p.producer)
+print(p.get_price())
+p.set_price(2000)
+print(p.get_price())
+print(p.get_color())
+p.set_color("白色")
+print(p.get_color())
+```
+
+##### 多态
+
+定义抽象类，但是不实现，提供一个标准，子类去实现
+
+```python
+class Animal:
+    def speak(self):
+        pass
+
+
+class Dog(Animal):
+    def speak(self):
+        print('wang wang')
+
+
+class Cat(Animal):
+    def speak(self):
+        print('miao miao')
+
+
+class Bird(Animal):
+    def speak(self):
+        print('chu chu')
+
+
+def make_sound(animal):
+    animal.speak()
+
+
+if __name__ == '__main__':
+    dog = Dog()
+    make_sound(dog)
+    cat = Cat()
+    make_sound(cat)
+    bird = Bird()
+    make_sound(bird)
+```
+
+### 12.类型注解
+
+为了程序更加规范的开发，和IDE的友好提示，可以对变量添加一些类型提示。
+
+```python
+# 类型注解，帮助IDE自动提示和验证代码
+from typing import List, Tuple, Dict, Set, Union
+
+my_list: List[int] = [1, 2, 3]
+print(my_list)
+my_tuple: Tuple[int, str] = (1, 'hello')
+print(my_tuple)
+my_dict: Dict[str, int] = {'a': 1, 'b': 2}
+print(my_dict)
+my_set: Set[int] = {1, 2, 3}
+print(my_set)
+
+
+def getMax(arr: List[int]) -> int:
+    res = arr[0]
+    for i in range(1, len(arr)):
+        if arr[i] > res:
+            res = arr[i]
+    return res
+
+
+def add(a: int, b: int) -> int:
+    """
+    两个整数相加
+
+    参数:
+    a: int - 第一个整数
+    b: int - 第二个整数
+
+    返回值:
+    int - 两个整数相加的结果
+    """
+    return a + b
+
+
+print(add(1, 2))
+
+print(getMax([1, 2, 3, 4, 5]))
+
+
+class Student:
+    name: str = None
+    age: int = None
+    gender: str = None
+
+    def __init__(self, name, age, gender):
+        self.name = name
+        self.age = age
+        self.gender = gender
+
+
+def get_student_info(student: Student) -> str:
+    """
+    获取学生的信息
+
+    参数:
+    student: Student - 学生对象
+
+    返回值:
+    str - 学生的信息
+    """
+    return f'{student.name} {student.age} {student.gender}'
+
+
+student = Student('张三', 18, '男')
+print(get_student_info(student))
+
+# union 类型注解
+# 可以同时是int或str类型, 相当于(int | str)
+my_list: List[Union[int, str]] = [1, 'hello']
+print(my_list)
+```
