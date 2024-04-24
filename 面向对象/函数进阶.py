@@ -68,13 +68,13 @@ def get_fix_length_info_2(**kwargs):
     **kwargs: 可变参数列表，类型为字典
 
     返回值:
-    返回一个包含所有参数的元组
+    返回一个包含所有参数的字典
     """
 
     return kwargs
 
-
 print(get_fix_length_info_2(name='小明', age=18, sex='男'))
+print(type(get_fix_length_info_2(name='小明', age=18, sex='男')))
 
 
 # 传入函数进行运算
