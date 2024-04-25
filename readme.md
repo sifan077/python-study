@@ -1337,3 +1337,27 @@ print(add_money(100))
 print(sub_money(15646))
 ```
 
+### 14. 装饰器
+
+个人认为可以当做spring的aop理解，也就是使用目标函数当做参数传入增强函数中。
+
+```python
+# 装饰器使用
+# 我觉得可以当做拦截器理解，做一些功能增强
+
+def aop(func):
+    def wrapper(*args, **kwargs):
+        print("before")
+        func(*args, **kwargs)
+        print("after")
+
+    return wrapper
+
+
+@aop
+def test():
+    print("test")
+
+
+test()
+```
