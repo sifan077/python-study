@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="589b273f-5b16-4c59-8809-f6757ef54329" name="变更" comment="多线程">
-      <change afterPath="$PROJECT_DIR$/进阶/客户端.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/进阶/服务端.py" afterDir="false" />
+    <list default="true" id="589b273f-5b16-4c59-8809-f6757ef54329" name="变更" comment="最简单的网络编程">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,7 @@
       <recent name="D:\code\接单\quick_study\基础语法" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.客户端">
+  <component name="RunManager" selected="Python.正则表达式">
     <configuration name="服务端" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="quick_study" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,7 +77,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="装饰器" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="正则表达式" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="quick_study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -91,7 +90,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/进阶/装饰器.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/进阶/正则表达式.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -674,11 +673,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.正则表达式" />
         <item itemvalue="Python.客户端" />
         <item itemvalue="Python.服务端" />
         <item itemvalue="Python.多线程" />
         <item itemvalue="Python.单例模式" />
-        <item itemvalue="Python.装饰器" />
       </list>
     </recent_temporary>
   </component>
@@ -700,7 +699,7 @@
       <workItem from="1713788241978" duration="5164000" />
       <workItem from="1713871287012" duration="9554000" />
       <workItem from="1713919245493" duration="17679000" />
-      <workItem from="1714024707866" duration="4084000" />
+      <workItem from="1714024707866" duration="5764000" />
     </task>
     <task id="LOCAL-00001" summary="列表遍历">
       <created>1713624802955</created>
@@ -772,7 +771,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714029472552</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="最简单的网络编程">
+      <created>1714030331550</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1714030331550</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -837,12 +843,13 @@
     <MESSAGE value="闭包" />
     <MESSAGE value="装饰器" />
     <MESSAGE value="多线程" />
-    <option name="LAST_COMMIT_MESSAGE" value="多线程" />
+    <MESSAGE value="最简单的网络编程" />
+    <option name="LAST_COMMIT_MESSAGE" value="最简单的网络编程" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/quick_study$GDP.coverage" NAME="动态GDP 覆盖结果" MODIFIED="1713950232609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/可视化" />
     <SUITE FILE_PATH="coverage/quick_study$json.coverage" NAME="json演示 覆盖结果" MODIFIED="1713925372330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/json学习" />
-    <SUITE FILE_PATH="coverage/quick_study$.coverage" NAME="客户端 覆盖结果" MODIFIED="1714030019124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/进阶" />
+    <SUITE FILE_PATH="coverage/quick_study$.coverage" NAME="正则表达式 覆盖结果" MODIFIED="1714031647985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/进阶" />
     <SUITE FILE_PATH="coverage/quick_study$main.coverage" NAME="main 覆盖结果" MODIFIED="1713963051120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/quick_study$package_test.coverage" NAME="package_test 覆盖结果" MODIFIED="1713882548751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/包" />
     <SUITE FILE_PATH="coverage/quick_study$if.coverage" NAME="if语句 覆盖结果" MODIFIED="1713451418317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/流程控制" />

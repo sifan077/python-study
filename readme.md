@@ -1440,5 +1440,24 @@ print(data.decode('utf-8'))
 client.close()
 ```
 
+### 17.正则表达式
 
+用于在字符串中做匹配和这校验符合某种规则，但是语法挺麻烦的。
+
+```python
+import re
+
+s = 'python itcast sifan xiaoyue itcast'
+# 匹配字符串开头
+result = re.match('itcast', s)
+print(result)
+
+# 匹配字符串 anywhere
+result = re.search('itcast', s)
+print(result)
+
+# 匹配所有字符串 anywhere
+result = re.findall('itcast', s)
+print(result)
+```
 
